@@ -54,19 +54,19 @@ export default function ProjectCard({ project, delay }) {
                 {project.price}
               </span>
             </div>
-            <div className="flex gap-2">
-              <a>
+                        <div className="flex gap-2">
+              
                 href="#"
                 className="px-3.5 py-2 rounded-[10px] text-[0.8rem] font-semibold border"
                 style={{ borderColor: "#E5E7EB", color: "#111827" }}
-              
+              >
                 Details
               </a>
-              <a>
+              
                 href="#"
                 className="px-3.5 py-2 rounded-[10px] text-[0.8rem] font-semibold text-white"
                 style={{ background: "#FF6B00" }}
-              
+              >
                 Buy Now
               </a>
             </div>
