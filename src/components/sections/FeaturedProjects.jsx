@@ -2,6 +2,13 @@ import { Layout, Globe, Code2, Server, TestTube2, Settings2, ArrowRight } from "
 import Reveal from "../common/Reveal";
 import ProjectCard from "./ProjectCard";
 
+import landingPageImg from "../assets/price/landing-page.jpg";
+import wordpressImg from "../assets/price/wordpress.jpg";
+import frontEndImg from "../assets/price/front-end.jpg";
+import fullStackImg from "../assets/price/full-stack.jpg";
+import testingImg from "../assets/price/testing.jpg";
+import customImg from "../assets/price/custom.jpg";
+
 const PROJECTS = [
   {
     icon: Layout,
@@ -11,6 +18,7 @@ const PROJECTS = [
     rating: "4.9",
     originalPrice: "$55",
     price: "$50",
+    image: landingPageImg,
     desc: "A fast, conversion-focused landing page tailored to your brand.",
   },
   {
@@ -21,6 +29,7 @@ const PROJECTS = [
     rating: "4.8",
     originalPrice: "$220",
     price: "$200",
+    image: wordpressImg,
     desc: "A fully set up WordPress site with custom theme and plugins.",
   },
   {
@@ -31,6 +40,7 @@ const PROJECTS = [
     rating: "5.0",
     originalPrice: "$264",
     price: "$240",
+    image: frontEndImg,
     desc: "A full frontend build with responsive UI and clean component structure.",
   },
   {
@@ -41,6 +51,7 @@ const PROJECTS = [
     rating: "4.9",
     originalPrice: "$660",
     price: "$600",
+    image: fullStackImg,
     desc: "End-to-end web app with frontend, backend, database and auth included.",
   },
   {
@@ -51,6 +62,7 @@ const PROJECTS = [
     rating: "4.8",
     originalPrice: "$110",
     price: "$100",
+    image: testingImg,
     desc: "Thorough testing and QA pass for your existing web app or feature.",
   },
   {
@@ -61,6 +73,7 @@ const PROJECTS = [
     rating: "5.0",
     originalPrice: null,
     price: "Custom Quote",
+    image: customImg,
     desc: "Got something specific in mind? Price depends on scope and requirements.",
   },
 ];

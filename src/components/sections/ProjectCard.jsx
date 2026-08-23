@@ -8,11 +8,12 @@ export default function ProjectCard({ project, delay }) {
         className="group rounded-[22px] border bg-white overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_-20px_rgba(17,24,39,0.18)]"
         style={{ borderColor: "#E5E7EB" }}
       >
-        <div
-          className="h-44 relative flex items-center justify-center overflow-hidden"
-          style={{ background: "linear-gradient(135deg,#FFF3EA,#FFE3CC)" }}
-        >
-          <project.icon size={46} color="#FF6B00" className="transition-transform duration-300 group-hover:scale-110" />
+        <div className="h-44 relative overflow-hidden">
+          <img
+            src={project.image}
+            alt={project.name}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          />
           <span
             className="absolute top-3 left-3 px-3 py-1 rounded-full text-[0.7rem] font-semibold bg-white"
             style={{ color: "#111827" }}
@@ -55,7 +56,7 @@ export default function ProjectCard({ project, delay }) {
               </span>
             </div>
             <div className="flex gap-2">
-               <a
+              <a
                 href="#"
                 className="px-3.5 py-2 rounded-[10px] text-[0.8rem] font-semibold border"
                 style={{ borderColor: "#E5E7EB", color: "#111827" }}
