@@ -85,7 +85,7 @@ export default function FeaturedProjects() {
         <Reveal className="flex flex-wrap items-end justify-between gap-4 mb-12">
           <div>
             <h2 className="text-[2.1rem] font-extrabold tracking-tight" style={{ color: "#111827" }}>
-              Featured projects
+              Offers
             </h2>
             <p className="mt-2 text-[1.05rem]" style={{ color: "#6B7280" }}>
               Hand-picked, code-reviewed, ready to deploy.
