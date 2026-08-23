@@ -8,7 +8,7 @@ export default function ProjectCard({ project, delay }) {
         className="group rounded-[22px] border bg-white overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_-20px_rgba(17,24,39,0.18)]"
         style={{ borderColor: "#E5E7EB" }}
       >
-        <div className="h-44 relative overflow-hidden">
+        <div className="h-50 relative overflow-hidden">
           <img
             src={project.image}
             alt={project.name}
