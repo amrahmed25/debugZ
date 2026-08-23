@@ -1,6 +1,69 @@
 import { Star } from "lucide-react";
 import Reveal from "../common/Reveal";
 
+const PROJECTS = [
+  {
+    icon: Layout,
+    name: "Landing Page",
+    category: "Landing Page",
+    stack: ["HTML", "CSS", "JavaScript"],
+    rating: "4.9",
+    originalPrice: "$55",
+    price: "$50",
+    desc: "A fast, conversion-focused landing page tailored to your brand.",
+  },
+  {
+    icon: Globe,
+    name: "WordPress Website",
+    category: "WordPress",
+    stack: ["WordPress", "PHP"],
+    rating: "4.8",
+    originalPrice: "$220",
+    price: "$200",
+    desc: "A fully set up WordPress site with custom theme and plugins.",
+  },
+  {
+    icon: Code2,
+    name: "Complete Frontend Project",
+    category: "Frontend",
+    stack: ["React", "Tailwind"],
+    rating: "5.0",
+    originalPrice: "$264",
+    price: "$240",
+    desc: "A full frontend build with responsive UI and clean component structure.",
+  },
+  {
+    icon: Server,
+    name: "Full-Stack Website",
+    category: "Full Stack",
+    stack: ["Next.js", "Node.js", "MongoDB"],
+    rating: "4.9",
+    originalPrice: "$660",
+    price: "$600",
+    desc: "End-to-end web app with frontend, backend, database and auth included.",
+  },
+  {
+    icon: TestTube2,
+    name: "Testing & QA",
+    category: "Testing",
+    stack: ["Jest", "Cypress"],
+    rating: "4.8",
+    originalPrice: "$110",
+    price: "$100",
+    desc: "Thorough testing and QA pass for your existing web app or feature.",
+  },
+  {
+    icon: Settings2,
+    name: "Custom Project",
+    category: "Custom",
+    stack: ["Your Stack"],
+    rating: "5.0",
+    originalPrice: null,
+    price: "Custom Quote",
+    desc: "Got something specific in mind? Price depends on scope and requirements.",
+  },
+];
+
 export default function ProjectCard({ project, delay }) {
   return (
     <Reveal delay={delay}>
@@ -54,19 +117,19 @@ export default function ProjectCard({ project, delay }) {
                 {project.price}
               </span>
             </div>
-                        <div className="flex gap-2">
-              
+            <div className="flex gap-2">
+                <a>
                 href="#"
                 className="px-3.5 py-2 rounded-[10px] text-[0.8rem] font-semibold border"
                 style={{ borderColor: "#E5E7EB", color: "#111827" }}
-              >
+              
                 Details
               </a>
               
                 href="#"
                 className="px-3.5 py-2 rounded-[10px] text-[0.8rem] font-semibold text-white"
                 style={{ background: "#FF6B00" }}
-              >
+              <a>
                 Buy Now
               </a>
             </div>
