@@ -44,9 +44,16 @@ export default function ProjectCard({ project, delay }) {
             ))}
           </div>
           <div className="mt-6 flex items-center justify-between">
-            <span className="text-[1.2rem] font-extrabold" style={{ color: "#111827" }}>
-              {project.price}
-            </span>
+            <div className="flex items-baseline gap-2">
+              {project.originalPrice && (
+                <span className="text-[0.9rem] font-medium line-through" style={{ color: "#9CA3AF" }}>
+                  {project.originalPrice}
+                </span>
+              )}
+              <span className="text-[1.2rem] font-extrabold" style={{ color: "#111827" }}>
+                {project.price}
+              </span>
+            </div>
             <div className="flex gap-2">
               <a
                 href="#"
@@ -56,6 +63,7 @@ export default function ProjectCard({ project, delay }) {
                 Details
               </a>
               <a
+              
                 href="#"
                 className="px-3.5 py-2 rounded-[10px] text-[0.8rem] font-semibold text-white"
                 style={{ background: "#FF6B00" }}
