@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 import Reveal from "../common/Reveal";
+import { Layout, Globe, Code2, Server, TestTube2, Settings2, ArrowRight } from "lucide-react";
 
 const PROJECTS = [
   {
