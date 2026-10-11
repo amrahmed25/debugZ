@@ -86,7 +86,7 @@ We work with modern web technologies to build scalable and maintainable digital 
 
 ## 🌐 Explore DebugZ
 
-* **Website:** https://debugz.dev
+* **Website:** (https://debug-z-seven.vercel.app/)
 * **GitHub:** https://github.com/amrahmed25
 * **Instagram:** @debugg_z
 * **Facebook:** @debug_z
