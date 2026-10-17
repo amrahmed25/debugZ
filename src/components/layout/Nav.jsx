@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import Logo from "../common/Logo";
 
-const NAV_LINKS = ["Home", "Projects", "Categories", "Custom Project", "Pricing", "About", "Contact"];
+const NAV_LINKS = [ { name: "Home", id: "home" }, { name: "Projects", id: "projects" }, { name: "Categories", id: "categories" }, { name: "Custom Project", id: "custom-project" }, { name: "Pricing", id: "pricing" }, { name: "About", id: "why-choose" }, { name: "Contact", id: "contact" }, ];
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -26,16 +26,7 @@ export default function Nav() {
       <div className="max-w-7xl mx-auto px-6 h-[72px] flex items-center justify-between">
         <Logo />
         <nav className="hidden lg:flex items-center gap-8">
-          {NAV_LINKS.map((l) => (
-            <a
-              key={l}
-              href="#"
-              className="text-[0.925rem] font-medium transition-colors hover:text-[#FF6B00]"
-              style={{ color: "#374151" }}
-            >
-              {l}
-            </a>
-          ))}
+          {NAV_LINKS.map((link) => ( <a key={link.id} href={`#${link.id}`} onClick={() => setOpen(false)} className="text-[0.925rem] font-medium transition-colors hover:text-[#FF6B00]" style={{ color: "#374151" }} > {link.name} </a> ))}
         </nav>
         <div className="hidden lg:flex items-center gap-3">
           <a href="#" className="text-[0.925rem] font-semibold" style={{ color: "#111827" }}>

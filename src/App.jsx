@@ -1,5 +1,6 @@
 import Nav from "./components/layout/Nav";
 import Footer from "./components/layout/Footer";
+
 import Hero from "./components/sections/Hero";
 import TechStack from "./components/sections/TechStack";
 import Categories from "./components/sections/Categories";
@@ -14,19 +15,52 @@ import FinalCTA from "./components/sections/FinalCTA";
 
 export default function App() {
   return (
-    <div style={{ background: "#FAFAFA", minHeight: "100vh" }}>
+    <div
+      id="home"
+      style={{ background: "#FAFAFA", minHeight: "100vh" }}
+    >
       <Nav />
-      <Hero />
-      <TechStack />
-      <Categories />
-      <FeaturedProjects />
-      <WhyChoose />
-      <HowItWorks />
-      <CustomDev />
-      <Testimonials />
-      <FAQ />
-      <Contact />
-      <FinalCTA />
+
+      <div id="tech-stack" className="scroll-mt-[80px]">
+        <TechStack />
+      </div>
+
+      <div id="categories" className="scroll-mt-[80px]">
+        <Categories />
+      </div>
+
+      <div id="projects" className="scroll-mt-[80px]">
+        <FeaturedProjects />
+      </div>
+
+      <div id="why-choose" className="scroll-mt-[80px]">
+        <WhyChoose />
+      </div>
+
+      <div id="how-it-works" className="scroll-mt-[80px]">
+        <HowItWorks />
+      </div>
+
+      <div id="custom-project" className="scroll-mt-[80px]">
+        <CustomDev />
+      </div>
+
+      <div id="testimonials" className="scroll-mt-[80px]">
+        <Testimonials />
+      </div>
+
+      <div id="faq" className="scroll-mt-[80px]">
+        <FAQ />
+      </div>
+
+      <div id="contact" className="scroll-mt-[80px]">
+        <Contact />
+      </div>
+
+      <div id="pricing" className="scroll-mt-[80px]">
+        <FinalCTA />
+      </div>
+
       <Footer />
     </div>
   );
