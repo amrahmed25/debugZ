@@ -1,6 +1,6 @@
 import Nav from "./components/layout/Nav";
 import Footer from "./components/layout/Footer";
-
+import { Analytics } from "@vercel/analytics/react";
 import Hero from "./components/sections/Hero";
 import TechStack from "./components/sections/TechStack";
 import Categories from "./components/sections/Categories";
@@ -19,6 +19,7 @@ export default function App() {
       id="home"
       style={{ background: "#FAFAFA", minHeight: "100vh" }}
     >
+      <Analytics />
       <Nav />
 
       <div id="tech-stack" className="scroll-mt-[80px]">
